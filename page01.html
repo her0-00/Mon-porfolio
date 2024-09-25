@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Page 1</title>
+  </head>
+  <body>
+    <header>
+      <h1>Exercice 1: Le test d'hypothèse</h1>
+      <hr>
+    </header>
+    <h2>Test statistique</h2>
+    <div>
+      En statistiques, un test, ou test d'hypothèse, est une procédure de décision entre deux hypothèses. Il s'agit d'une démarche consistant à rejeter ou à ne pas rejeter une hypothèse statistique, appelée hypothèse nulle, en fonction d'un échantillon de données.
+    </div>
+    <div>
+      Il s'agit de statistique inférentielle : à partir de calculs réalisés sur des données observées, on émet des conclusions sur la population, en leur rattachant des risques d'être erronées.
+    </div>
+    <h2>Hypothèses de test</h2>
+    <h3><ins>Définition</ins></h3>
+    <p>
+      L'hypothèse nulle notée <strong>H0</strong> est celle que l'on considère vraie a priori. L’hypothèse <strong>H0</strong> est donc privilégiée et il faut des observations très éloignées de cette hypothèse pour la rejeter.
+      Le but du test est de décider si cette hypothèse <strong>H0</strong> est a priori crédible. L'hypothèse alternative notée <strong>H1</strong> est l'hypothèse complémentaire à l'hypothèse nulle.
+      Ces deux hypothèses ne sont toutefois pas symétriques. <strong>H1</strong> est choisie uniquement par défaut si <strong>H0</strong> n'est pas considérée comme crédible, <strong>H0</strong> étant l'hypothèse dont le rejet à tort est le plus préjudiciable. 
+      Le choix de <strong>H0</strong> et de <strong>H1</strong> est en général imposé par le test que l'on utilise et ne relève donc pas de l'utilisateur.
+    </p>
+    <h3>Écriture des hypothèses : exemple</h3>
+    <p>
+      Soit μ1 et μ2 les moyennes de tension artérielle de deux populations, l'une correspondant à la prise de médicaments et l'autre de placebo.
+      Une manière de démontrer qu'un médicament modifie la tension artérielle est de montrer que μ1 est différent de μ2. Les hypothèses du test deviennent alors :
+    </p>
+    <ul>
+      <li><strong>H0 :</strong> : les moyennes des deux populations sont égales</li>
+      <li><strong>H1 :</strong> : les moyennes des deux populations sont différentes</li>
+    </ul>
+    <p>
+      On l'écrit succinctement sous la forme :
+    </p>
+    <ol>
+      <li><strong><em>H0 :</em></strong> μ2 = μ1</li>
+      <li><strong><em>H1 :</em></strong> μ2 != μ1</li>
+    </ol>
+    <h2>Erreur de type I et II</h2>
+    <h3><ins>Risque de première espèce et confiance</ins></h3>
+    <p>
+      Le <a href="https://fr.wikipedia.org/w/index.php?title=Risque_de_premi%C3%A8re_esp%C3%A8ce&action=edit&redlink=1" title="lien">risque de première espèce</a> α est la probabilité sous <strong>H0</strong> de la région de rejet. En d'autres termes, il s'agit de la probabilité que l'on accepte de décider <strong>H1</strong> si la vérité est <strong>H0</strong>.
+    </p>
+    <h3><ins>Choix de α et β</ins></h3>
+    <p>Pour se représenter ces différentes notions, on peut les représenter au travers du tableau suivant :</p>
+    <div>
+      <img src="../../images/Tableau_hypoth_ses.png" title="image" alt="Tableau des hypothèses">
+    </div>
+    <p>
+      Le choix de α et de β se fait de façon assez arbitraire car si l'on cherche à en diminuer un, l'autre va automatiquement augmenter. On définit généralement le risque α de façon arbitraire et la valeur du risque β s'ajuste automatiquement. Ce choix détermine alors une valeur seuil (notée S sur le schéma) qui représente la valeur de bascule pour la statistique du test entre les deux décisions (rejet ou non-rejet de <strong>H0</strong>).
+      Le graphique suivant tente de représenter visuellement ces risques, la courbe noire représente la loi ici normale de la statistique du test sous l'hypothèse <strong>H0</strong> et la courbe bleue représente la loi ici normale de la statistique du test sous l'hypothèse <strong>H1</strong>.
+    </p>
+    <div>
+      <img src="../../images/Choix_des_risques_de_premiere_et_deuxieme_espece.png" title="image" alt="Choix des risques de première et deuxième espèce">
+    </div>
+    <p>
+      Si l'échantillon reste inchangé, une diminution de α entraîne une augmentation de β et inversement. Autrement dit, si on décide de réduire le nombre de <a href="https://fr.wikipedia.org/wiki/Faux_positif" title="lien">faux positifs</a>, on augmente le nombre de <a href="https://fr.wikipedia.org/wiki/Faux_n%C3%A9gatif" title="lien">faux négatifs</a>.
+      La seule manière d'améliorer les deux critères est d'augmenter la taille de l'échantillon.
+    </p>
+    <h2><ins>Citation</ins></h2>
+    <blockquote lang="fr" cite="C.Bernard">
+      <p>
+        &lt;&lt;Quand l'hypothèse est soumise à la méthode expérimentale, elle devient une théorie; tandis que si elle est soumise à la logique seule, elle devient un système.>>
+        <br>C.Bernard
+      </p>
+    </blockquote>
+    <ins>Source</ins> : 
+    <ul>
+      <li><a href="https://fr.wikipedia.org/wiki/Test_statistique" title="Source">Page Wikipédia</a></li>
+      <li><a href="https://www.bing.com/ck/a?!&&p=3df51bd30d5f9556JmltdHM9MTcyNjA5OTIwMCZpZ3VpZD0zOTk5OGVmZi1iMzBhLTZlMDgtMjNjZC05ZDRlYjJiMzZmNzcmaW5zaWQ9NTIyMA&ptn=3&ver=2&hsh=3&fclid=39998eff-b30a-6e08-23cd-9d4eb2b36f77&psq=introduction+%c3%a0+la+m%c3%a9decine+exp%c3%a9rimentale&u=a1aHR0cHM6Ly9waGlsb3NvcGhpZS1wZWRhZ29naWUud2ViLmFjLWdyZW5vYmxlLmZyL3NpdGVzL2RlZmF1bHQvZmlsZXMvbWVkaWEtZmljaGllcnMvMjAyMS0wNy9iZXJuYXJkX21lZGVjaW5lX2V4cC5wZGY&ntb=1" title="Source"> Introduction à la médecine expérimentale</a></li>
+    </ul>
+    <br>
+    <br>
+    <ins>Rédacteur</ins> 
+    <ul>
+      <li><em>Yénam Dossou</em></li>
+      <li><em>Anas Ibnouali</em></li>
+    </ul>
+	<footer>
+		<a href="../../index.html" title="Aller à la page d'accueil">
+			<img src="../../images/accueil.png" title="Accueil" alt="Aller vers l'accueil"/>
+		</a>
+		<a href="page02.html" title="Aller à la page 2">
+			<img src="../../images/suivant.png" title="Page 2" alt="Aller à la page suivante"/>
+		</a>
+	</footer>
+    
+  </body>
+
+
+ 
+</html>

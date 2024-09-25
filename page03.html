@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <script src="../../js/fonctions.js"></script>
+    <title>Page 3</title>
+  </head>
+  <body>
+    <h1>Exercice 3 : Formulaires</h1>
+    <hr>
+    <h2>Questionnaire</h2>
+    <fieldset>
+      <legend>À quoi sert le niveau de signification (α) dans un test d'hypothèse ?</legend>
+      <input type="checkbox" value="A" name="caract[]" id="id_A">
+      <label for="Rep1">Déterminer la taille de l'échantillon :</label><br>
+      <input type="checkbox" value="B" name="caract[]" id="id_B">
+      <label for="Rep2">Fixer la probabilité de rejeter l'hypothèse nulle alors qu'elle est vraie:</label><br>
+      <input type="checkbox" value="C" name="caract[]" id="id_C">
+      <label for="Rep3">Mesurer la variabilité des données :</label><br>
+    </fieldset>
+    <fieldset>
+      <legend>Quel résultat permet de rejeter l'hypothèse nulle ?</legend>
+      <input type="checkbox" value="A" name="caract[]" id="id_A">
+      <label for="Rep1">Un p-value inférieur au niveau de signification :</label><br>
+      <input type="checkbox" value="B" name="caract[]" id="id_B">
+      <label for="Rep2">Une moyenne supérieure à l'écart-type:</label><br>
+      <input type="checkbox" value="C" name="caract[]" id="id_C">
+      <label for="Rep3"> Un p-value supérieur à 0.05 :</label>
+    </fieldset>
+    <fieldset>
+      <legend>Quels éléments sont nécessaires pour réaliser un test d'hypothèse ? (Sélectionnez une réponse)</legend>
+      <input type="radio" value="echantillon" name="elements" id="id_echantillon">
+      <label for="id_echantillon">Un échantillon de données</label><br>
+      <input type="radio" value="hyp_alternative" name="elements" id="id_hyp_alternative">
+      <label for="id_hyp_alternative">Une hypothèse alternative (H₁)</label><br>
+      <input type="radio" value="niveau_signification" name="elements" id="id_niveau_signification">
+      <label for="id_niveau_signification">Un niveau de signification (α)</label><br>
+      <input type="radio" value="population" name="elements" id="id_population">
+      <label for="id_population">La taille de la population</label><br>
+      <input type="radio" value="hyp_nulle" name="elements" id="id_hyp_nulle">
+      <label for="id_hyp_nulle">Une hypothèse nulle (H₀)</label><br>
+      <input type="radio" value="distrib_normale" name="elements" id="id_distrib_normale">
+      <label for="id_distrib_normale">Une distribution normale des données</label><br>
+      <input type="radio" value="variance" name="elements" id="id_variance">
+      <label for="id_variance">La variance des données</label><br>
+      <input type="radio" value="pvalue" name="elements" id="id_pvalue">
+      <label for="id_pvalue">La p-value</label><br>
+      <input type="radio" value="hyp_multi" name="elements" id="id_hyp_multi">
+      <label for="id_hyp_multi">Une liste d'hypothèses alternatives multiples</label><br>
+    </fieldset>
+    <fieldset>
+      <legend>Quelle est l'hypothèse qui est toujours refusée ?</legend>
+      <select id="liste" name="li">
+        <option value="Hypothèse nulle" selected="">Hypothèse nulle</option>
+        <option value="Hypothèse alternative">Hypothèse alternative</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Avez-vous des questions, commentaires ou suggestions ?<br> Merci de les écrire ici :</legend>
+      <p></p>
+      <textarea name="retour" id="retour" rows="4" cols="50"></textarea>
+    </fieldset>
+    <form method="post" action="page03.html" id="formulaire" onsubmit="javascript:return valider();">
+      <fieldset>
+        <legend>Genre</legend>
+        <label>
+          <input type="radio" name="genre" value="homme"> Homme
+        </label>
+        <label>
+          <input type="radio" name="genre" value="femme"> Femme
+        </label><br>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom"><br>
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom">
+      </fieldset>
+      <fieldset>
+        <legend>Validation du formulaire</legend>
+        <div>
+          <input type="submit" value="Valider">
+          <input type="reset" value="Annuler">
+        </div>
+      </fieldset>
+    </form>
+    <footer>
+      <a href="page02.html" title="Page précédente">
+        <img alt="Page précédente" width="50px" src="../../images/precedent.png">
+    </a>
+    <a href="../../index.html" title="Aller à la page d&#39;accueil" target="_blank">
+        <img alt="Page d&#39;accueil" width="50px" src="../../images/accueil.png">
+    </a>
+    </footer>
+  </body>
+</html>
+
+  
+    
+    
+      
+  
+  
